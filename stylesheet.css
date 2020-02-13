@@ -13,7 +13,7 @@ color: white;
 .nav-list {display: flex;
 list-style: none;
 font-size: 2rem;
-font-weight: 400;
+font-weight: 200;
 color: white;
 }
 .nav-list a {
@@ -37,14 +37,55 @@ h1 {color:white;
 font-size:2em;
 display: flex;
 align-items: center;
-justify-content: center;}
+justify-content: center;
+padding:.5em;}
 h3 {text-align:center;
 font-size:1em}
+
+
 .projects {display:flex;
-justify-content: space-around;}
-.projectcaption {
-    text-align: center;
-}
+
+    justify-content: space-around;}
 i {
-    widows: 60px;
+    font-size: 1.5em;
 }
+
+#contact {display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-color: black;
+color:white;
+width:100%;
+flex-wrap:wrap;
+height: 100vh;
+}
+#contact a {text-decoration: none;
+color:white;
+padding:2em;}
+a {text-decoration: none;}
+footer {font-size:1em;
+height:3em;
+display: flex;
+align-items: center;
+justify-content: center;}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 50%;
+    }
